@@ -24,10 +24,13 @@
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              { "glob": "**/*", "input": "./node_modules/font-awesome/fonts", "output": "/font-awesome/" }
             ],
             "styles": [
-              "src/styles.sass"
+              "src/styles.sass",
+              "node_modules/font-awesome/css/font-awesome.min.css"
+
             ],
             "scripts": []
           },
